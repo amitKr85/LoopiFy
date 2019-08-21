@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="popup_style.css"/>
+  </head>
+<body>
+<div id="header"><img src="icons/icon_32.png" class="icon"> LoopiFy</div>
+<div id="content">
+	<div id="editor">
+		<div id="seeker">
+			<div id="duration_seeker">
+				<div id="start_p" class="end_points"></div>
+				<div id="start_arrow" class="arrows"></div>
+				<div id="start_t" class="end_times times">
+					<input type="text" size="2" class="time_input hours start_t"/>
+					<span class="colon hours">:</span>
+					<input type="text" size="2" class="time_input minutes start_t"/>
+					<span class="colon minutes">:</span>
+					<input type="text" size="2" class="time_input seconds start_t"/>
+				</div>
+				<div id="end_p" class="end_points"></div>
+				<div id="end_arrow" class="arrows"></div>
+				<div id="end_t" class="end_times times">
+					<input type="text" size="2" class="time_input hours end_t"/>
+					<span class="colon hours">:</span>
+					<input type="text" size="2" class="time_input minutes end_t"/>
+					<span class="colon minutes">:</span>
+					<input type="text" size="2" class="time_input seconds end_t"/>
+				</div>
+			</div>
+		</div>
+		<div id="mask" class="enabled"></div>
+	</div>
+	<div id="toggle_sec">
+		<div id="toggle_text">Enable for current video</div>
+		<div id="toggle_button" class="disabled"><div id="toggle_dot" class="disabled"></div></div>
+	</div>
+</div>
+<div id="console"></div>
+<div id="footer">
+Made with <img src="icons/heart.png" class="heart_image">
+</div>
+<script type="text/javascript" src="popup_script.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</body>
+</html>
